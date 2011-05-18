@@ -1,8 +1,8 @@
 /*
 * jQuery timepicker addon
 * By: Trent Richardson [http://trentrichardson.com]
-* Version 0.9.4-dev
-* Last Modified: 03/02/2011
+* Version 0.9.4
+* Last Modified: 05/12/2011
 * 
 * Copyright 2011 Trent Richardson
 * Dual licensed under the MIT and GPL licenses.
@@ -490,7 +490,7 @@ $.extend(Timepicker.prototype, {
 			if ($buttonPanel.length) $buttonPanel.before($tp);
 			else $dp.append($tp);
 
-			this.$timeObj = $('#ui_tpicker_time_'+ dp_id);
+			this.$timeObj = $tp.find('#ui_tpicker_time_'+ dp_id);
 
 			if (this.inst !== null) {
 				var timeDefined = this.timeDefined;
